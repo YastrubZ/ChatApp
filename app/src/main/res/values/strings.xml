@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ChatApp</string>
+
+    <string name="default_user_name">Guest</string>
+    <string name="default_user_message">Hello! I am a new user</string>
+    <string name="type_message_hint">Type here to chat</string>
+    <string name="send_button_title">Send</string>
+</resources>
