@@ -2,8 +2,8 @@ package com.chatapp.ui
 
 import android.os.Bundle
 import android.view.Gravity
-import android.view.View
 import android.widget.LinearLayout
+import android.widget.ScrollView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.doAfterTextChanged
@@ -59,7 +59,7 @@ class ChatActivity : AppCompatActivity(), ChatListener {
             newTextView.text = message
             newTextView.setPadding(resources.getDimension(R.dimen.default_text_padding).toInt())
             chatLayout.addView(newTextView)
-            scrollView.fullScroll(View.FOCUS_DOWN)
+            scrollView.postDelayed({ scrollView.fullScroll(ScrollView.FOCUS_DOWN) }, 100)
         }
     }
 }
